@@ -93,6 +93,10 @@ body {
     justify-content: center;
   }
 
+  .card-pop {
+    max-width: 300px;
+  }
+
   .user-card {
     width: 300px;
   }
@@ -103,5 +107,42 @@ body {
 
   .user-details h2 {
     font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #root {
+    /* width: 500px; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-inline: auto;
+    text-align: center;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card__user-name {
+    font-size: 1.4rem;
+  }
+
+  .card-username {
+    font-size: 1.4rem;
+  }
+
+  .card-pop {
+    max-width: 500px;
+  }
+
+  .user-card {
+    width: 300px;
+  }
+
+  .user-title {
+    font-size: 1.8rem;
+  }
+
+  .user-details h2 {
+    font-size: 1.6rem;
   }
 }

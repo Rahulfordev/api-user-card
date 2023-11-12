@@ -68,7 +68,7 @@ function showData(userData) {
     div.classList.add("user-card");
     div.innerHTML = `
     <img class="card-image" src="image/user.png" width="50px" height="50px" alt="">
-         <h2>${name}</h2>
+         <h2 class="card__user-name">${name}</h2>
         <h4 class="card-username">${username}</h4> 
         <button class="card-btn" id="button" onclick="myFunction(${id})">Show Details</button>
         
