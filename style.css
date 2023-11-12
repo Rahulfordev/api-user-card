@@ -80,37 +80,7 @@ body {
   display: block;
 }
 
-@media screen and (max-width: 600px) {
-  #root {
-    /* width: 500px; */
-    display: flex;
-    /* grid-template-columns: repeat(1, 1fr); */
-    flex-direction: column;
-    margin-inline: auto;
-    text-align: center;
-    margin-top: 50px;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .card-pop {
-    max-width: 300px;
-  }
-
-  .user-card {
-    width: 300px;
-  }
-
-  .user-title {
-    font-size: 1.1rem;
-  }
-
-  .user-details h2 {
-    font-size: 1rem;
-  }
-}
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   #root {
     /* width: 500px; */
     display: grid;
@@ -144,5 +114,35 @@ body {
 
   .user-details h2 {
     font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #root {
+    /* width: 500px; */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column;
+    margin-inline: auto;
+    text-align: center;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-pop {
+    max-width: 300px;
+  }
+
+  .user-card {
+    width: 300px;
+  }
+
+  .user-title {
+    font-size: 1.1rem;
+  }
+
+  .user-details h2 {
+    font-size: 1rem;
   }
 }
