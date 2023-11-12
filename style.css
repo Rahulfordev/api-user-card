@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  background-color: #e0f4ff;
+}
+
+.main {
+  display: grid;
+}
+
+#root {
+  max-width: 1250px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-inline: auto;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.user-card {
+  background-color: #39a7ff;
+  color: #e0f4ff;
+  border-radius: 10px;
+  max-width: 300px;
+  height: 220px;
+}
+
+.card-btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.card-username {
+  margin: 15px 0px;
+}
+
+.card-image {
+  padding-top: 15px;
+}
+
+.card-pop {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #e0f4ff;
+  border-radius: 10px;
+  width: 500px;
+  box-shadow: 0px -25px 20px -20px rgba(11, 113, 223, 0.45),
+    25px 0 20px -20px rgba(11, 113, 223, 0.45),
+    0px 25px 20px -20px rgba(11, 113, 223, 0.45),
+    -25px 0 20px -20px rgba(11, 113, 223, 0.45);
+}
+
+.pop-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0px -1px 20px -10px rgba(0, 0, 0, 0.45);
+}
+
+.close-info {
+  background: transparent;
+  font-size: 2rem;
+}
+
+.user-details {
+  padding: 0 20px;
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  #root {
+    /* width: 500px; */
+    display: flex;
+    /* grid-template-columns: repeat(1, 1fr); */
+    flex-direction: column;
+    margin-inline: auto;
+    text-align: center;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+  }
+  .card-pop {
+    width: 300px;
+  }
+
+  .user-title {
+    font-size: 1.1rem;
+  }
+  .user-details h2 {
+    font-size: 1rem;
+  }
+}
