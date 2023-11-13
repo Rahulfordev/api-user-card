@@ -80,9 +80,35 @@ body {
   display: block;
 }
 
+.user-title {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.card-btn {
+  transition: 0.5s ease-in-out;
+}
+
+.card-btn:hover {
+  color: #fff;
+  background-color: #87c4ff;
+}
+
+.user-details h2:first-child {
+  margin-block-start: 12px;
+}
+
+.user-details h2 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  border-bottom: 2px solid #87c4ff;
+  border-radius: 12px;
+  padding: 5px;
+  margin-block-start: 0;
+}
+
 @media screen and (max-width: 850px) {
   #root {
-    /* width: 500px; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-inline: auto;
@@ -119,7 +145,6 @@ body {
 
 @media screen and (max-width: 600px) {
   #root {
-    /* width: 500px; */
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     flex-direction: column;

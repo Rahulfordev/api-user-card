@@ -34,7 +34,7 @@ function detailFun(data) {
   
   <div class="user-info"> 
  <dvi class="user-details">
-    <h2 class="win-name">Name: ${name}</h2>
+  <h2 class="win-name">Name: ${name}</h2>
   <h2>User Name: ${username}</h2>
   <h2>Email: ${email}</h2>
   <h2>Street: ${street}</h2>
@@ -56,24 +56,15 @@ function closeAll() {
 function showData(userData) {
   let rootDiv = document.getElementById("root");
   userData.map((user) => {
-    const {
-      id,
-      name,
-      username,
-      email,
-      image,
-      address: { street, city },
-    } = user;
+    const { id, name, username } = user;
     const div = document.createElement("div");
     div.classList.add("user-card");
     div.innerHTML = `
     <img class="card-image" src="image/user.png" width="50px" height="50px" alt="">
          <h2 class="card__user-name">${name}</h2>
         <h4 class="card-username">${username}</h4> 
-        <button class="card-btn" id="button" onclick="myFunction(${id})">Show Details</button>
-        
+        <button class="card-btn" id="button" onclick="myFunction(${id})">Show Details</button> 
        `;
-
     rootDiv.appendChild(div);
   });
 }
